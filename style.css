@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f7f8;
+  font-family: 'Shadows Into Light', cursive;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.input-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+button#addBtn {
+  padding: 12px 18px;
+  font-size: 1.2rem;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.note {
+  width: 160px;
+  min-height: 120px;
+  padding: 15px;
+  background-color: #ffff88;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  font-size: 1.1rem;
+  position: relative;
+  word-wrap: break-word;
+  transition: transform 0.3s ease;
+}
+
+.note.completed {
+  text-decoration: line-through;
+  background-color: #d4ffd4;
+}
+
+.note .remove {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+
+input[type="time"] {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
